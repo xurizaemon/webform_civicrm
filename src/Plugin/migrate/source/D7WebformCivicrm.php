@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\webform_migrate\Plugin\migrate\source\d7;
+namespace Drupal\webform_civicrm\Plugin\migrate\source\d7;
 
 use Drupal\migrate\Event\ImportAwareInterface;
 use Drupal\migrate\Event\RollbackAwareInterface;
@@ -16,16 +16,16 @@ use Symfony\Component\Yaml\Yaml;
 use Drupal\Component\Utility\Bytes;
 
 /**
- * Drupal 7 webform source from database.
+ * Drupal 7 Webform CiviCRM source from database.
  *
  * @MigrateSource(
- *   id = "d7_webform",
+ *   id = "d7_webform_civicrm",
  *   core = {7},
- *   source_module = "webform",
- *   destination_module = "webform"
+ *   source_module = "webform_civicrm",
+ *   destination_module = "webform_civicrm"
  * )
  */
-class D7Webform extends DrupalSqlBase implements ImportAwareInterface, RollbackAwareInterface {
+class D7WebformCivicrm extends DrupalSqlBase implements ImportAwareInterface, RollbackAwareInterface {
 
   /**
    * {@inheritdoc}
