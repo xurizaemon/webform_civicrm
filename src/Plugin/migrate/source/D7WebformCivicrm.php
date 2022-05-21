@@ -74,9 +74,6 @@ class D7WebformCivicrm extends DrupalSqlBase implements ImportAwareInterface, Ro
 
     $query->addField('n', 'uid', 'node_uid');
 
-    // $query->where('wf.nid = 907');
-    //$query->where('wf.nid IN (907, 910, 912, 893)');
-
     return $query;
   }
 
